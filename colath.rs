@@ -1,7 +1,7 @@
 
 fn main(){
-    mut gat:[u64;1001]=[0;1001];
-    mut x:usize=0;
+    let mut gat:[u64;1001]=[0;1001];
+    let mut x:usize=0;
     calcul(2);
     gat.sort();
     for i in gat{print!("{i}, ")};

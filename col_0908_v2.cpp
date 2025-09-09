@@ -4,6 +4,7 @@
 #include <cstdlib>
 using namespace std;
 void cal(unsigned long long int n);
+bool is_be_1[100000]={};
 unsigned int x=0;
 int main(){
     unsigned long int x=0;
@@ -11,7 +12,7 @@ int main(){
     cal(n);
     return 0;
 }
-unsigned long long int big_int=pow(2,60);
+unsigned long long int big_int=100000;
 void cal(unsigned long long int n){
     x+=1;
     if(n==1){
