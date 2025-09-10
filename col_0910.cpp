@@ -7,13 +7,13 @@
 #include <fstream>
 using namespace std;
 void cal(unsigned long long int n);
+bool is_be_1[100000]={};
 unsigned long long int road[10000]={};
 fstream f;
-
 unsigned int x=0;
 int main(){
     f.open("../col_dp_data.txt", ios::in | ios::out);
-    for(unsigned long long int i=2;i<=1000000;i++){
+    for(unsigned long long int i=2;i<=10000;i++){
         cal(i);
         x=0;
         memset(road, 0, sizeof(road));
@@ -36,6 +36,13 @@ void cal(unsigned long long int n){
         f << endl;
         return;
     }
+    // if(n<100000 && is_be_1[n])
+    // {
+    //     f.read()
+    //     file << 
+    //     file << endl;
+    //     return;
+    // }
     if(n%2==0){
         cal(n>>1);
     }
