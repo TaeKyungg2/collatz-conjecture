@@ -11,7 +11,6 @@ unsigned long long int road[10000]={};
 ofstream outFile("col.txt");
 unsigned int x=0;
 int main(){
-    //unsigned long long int n=2021232344;
     for(unsigned long long int i=2;i<=10000;i++){
         cal(i);
         x=0;
@@ -33,6 +32,11 @@ void cal(unsigned long long int n){
             }
             outFile << road[i] << ", ";
         }
+        outFile << endl;
+        return;
+    }
+    if(n<100000 && is_be_1[n])
+    {
         outFile << endl;
         return;
     }
