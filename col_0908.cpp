@@ -17,7 +17,7 @@ int main(){
     }
     for(int i:gat){
         if(i>10000){continue;}
-        cout << i << ", ";
+        cout << i << ", "; // 트리에 포함된 숫자를 10000보다 작은 숫자만 출력한다.
     }
     
 }
