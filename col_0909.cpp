@@ -8,7 +8,7 @@ using namespace std;
 void cal(unsigned long long int n);
 bool is_be_1[100000]={};
 unsigned long long int road[10000]={};
-ofstream outFile("../col_data/col.txt");
+ofstream file("../col_data/col.txt");
 unsigned int x=0;
 int main(){
     //unsigned long long int n=2021232344;
@@ -17,7 +17,7 @@ int main(){
         x=0;
         memset(road, 0, sizeof(road));
     }
-    outFile.close();
+    file.close();
     return 0;
 }
 unsigned long long int big_int=100000000000000;
@@ -28,12 +28,12 @@ void cal(unsigned long long int n){
         //outFile << "Be 1 in count : "<<x << endl;
         for(int i =1;i<=10000;i++){
             if(road[i]==0){
-            outFile<<endl;
+            file<<endl;
             return;
             }
-            outFile << road[i] << ", ";
+            file << road[i] << ", ";
         }
-        outFile << endl;
+        file << endl;
         return;
     }
     if(n%2==0){

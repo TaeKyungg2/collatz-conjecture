@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "queue": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "ios": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "terminal.integrated.scrollback": 10000
