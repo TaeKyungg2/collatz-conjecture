@@ -8,7 +8,7 @@ using namespace std;
 void cal(unsigned long long int n);
 bool is_be_1[100000]={};
 unsigned long long int road[10000]={};
-ofstream outFile("col.txt");
+ofstream outFile("../col_data/col.txt");
 unsigned int x=0;
 int main(){
     //unsigned long long int n=2021232344;
