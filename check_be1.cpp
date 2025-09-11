@@ -12,14 +12,7 @@ fstream f;
 
 unsigned int x=0;
 int main(){
-    //f.open("../col_dp_data.txt", ios::in | ios::out);
     cal(1000000023);
-    // for(unsigned long long int i=2;i<=1000000;i++){
-        
-    //     x=0;
-    //     memset(road, 0, sizeof(road));
-    // }
-    //f.close();
     return 0;
 }
 unsigned long long int big_int=1844674407370955161;
