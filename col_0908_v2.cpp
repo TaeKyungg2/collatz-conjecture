@@ -12,28 +12,29 @@ fstream f;
 
 unsigned int x=0;
 int main(){
-    f.open("../col_dp_data.txt", ios::in | ios::out);
-    for(unsigned long long int i=2;i<=1000000;i++){
-        cal(i);
-        x=0;
-        memset(road, 0, sizeof(road));
-    }
-    f.close();
+    //f.open("../col_dp_data.txt", ios::in | ios::out);
+    cal(1000000023);
+    // for(unsigned long long int i=2;i<=1000000;i++){
+        
+    //     x=0;
+    //     memset(road, 0, sizeof(road));
+    // }
+    //f.close();
     return 0;
 }
-unsigned long long int big_int=100000000000000;
+unsigned long long int big_int=1844674407370955161;
 void cal(unsigned long long int n){
     x+=1;
     road[x]=n;
-    if(n==1){//outFile << "Be 1 in count : "<<x << endl;
+    if(n==1){
+        cout << "Be 1 in count : "<<x << endl;
         for(int i =1;i<=10000;i++){
             if(road[i]==0){
-            f<<endl;
             return;
             }
-            f << road[i] << ", ";
+            cout << road[i] << ", ";
         }
-        f << endl;
+        cout << endl;
         return;
     }
     if(n%2==0){

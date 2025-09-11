@@ -4,7 +4,9 @@
         "cmath": "cpp",
         "ios": "cpp",
         "fstream": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "xiosbase": "cpp",
+        "iosfwd": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "terminal.integrated.scrollback": 10000
