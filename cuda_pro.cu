@@ -1,7 +1,6 @@
 #include <cstdlib>
 #include <fstream>
 #include <cstring>
-#include <fstream>
 using namespace std;
 
 __device__ void cal(unsigned long long int n,unsigned long long int road[1000],unsigned int x);
