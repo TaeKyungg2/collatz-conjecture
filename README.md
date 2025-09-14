@@ -5,4 +5,5 @@
 <img src="graph/plot_1k_90angle.svg" alt="1" width="300"/>
 <img src="graph/1k_pi_30angle.svg" alt="2" width="300"/>
 <img src="graph/plot_1k_30angle.svg" alt="3" width="300"/>
+<img src="graph/3d_1k.svg" alt="7" width="300"/>
 <img src="graph/1k_tri.svg" alt="4" width="300"/>
