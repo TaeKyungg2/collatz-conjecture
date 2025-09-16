@@ -3,7 +3,7 @@ fn main(){
     let mut select=String::new();
     let _ = io::stdin().read_line(&mut select);
     let value=6;
-    let base_n:u64=0b111;
+    let base_n:u64=0b10111;
     if select=="1\n"{
         println!("num_be1");
         num_be1_counts(base_n);
