@@ -1,6 +1,6 @@
 //const MAX:u128=340282366920938463463374607431768211455;
 fn main(){
-    let goal_num=100;
+    let goal_num=100_000_000;
     let mut number:u128=1;
     while number<goal_num{
         number+=2;
@@ -12,7 +12,6 @@ fn main(){
         let length=128-number.leading_zeros();
         for j in 0..length{
             if number&1<<j==0{
-                zero+=1;
                 one=0;
                 if iszero{
                     zero+=1;
@@ -23,9 +22,9 @@ fn main(){
                 iszero=true;
             }
             else{
+                zero=0;
                 if !iszero{
                     one+=1;
-                    zero=0;
                     if one>big_one{
                         big_one=one;
                     }
@@ -33,7 +32,7 @@ fn main(){
                 iszero=false;
             }
         } 
-        println!("number{} zero{} one{}",number,big_zero,big_one);
+        //println!("number{:b} zero{} one{}",number,big_zero,big_one);
         if big_zero>big_one{
             continue;
         }
