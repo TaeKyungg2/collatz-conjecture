@@ -2,8 +2,9 @@ use std::io;
 fn main(){
     let mut select=String::new();
     let _ = io::stdin().read_line(&mut select);
-    let value=11;
-    let base_n:u128=0b10110011;
+    let value=6;
+    let base_n:u128=0b10111;
+
     if select=="1\n"{
         println!("num_besmall");
         num_besmall_counts(base_n);
