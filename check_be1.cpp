@@ -41,3 +41,6 @@ void cal(unsigned long long int n){
         cal((n<<1)+n+1);
     }
 }
+class asdf{
+    
+}

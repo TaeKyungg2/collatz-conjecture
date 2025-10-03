@@ -1,4 +1,5 @@
 use std::io;
+
 fn main(){
     let mut select=String::new();
     let _ = io::stdin().read_line(&mut select);
