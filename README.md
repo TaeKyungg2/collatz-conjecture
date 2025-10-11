@@ -1,4 +1,4 @@
-## collatz-conjecture project콜라흐 추측
+## collatz-conjecture project 콜라흐 추측
 
 dataset link [hugging face](https://huggingface.co/datasets/Taery/Collatz_conjecture_100m) | graph, etc [site](https://polite-bush-02da9d200.1.azurestaticapps.net/)
 <img src="graph/value.svg" alt="4" width="100%"/><br>
