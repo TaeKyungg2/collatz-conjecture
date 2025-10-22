@@ -14,14 +14,15 @@
 //         thread::sleep(Duration::from_millis(100));
 //     }
 // }
-use bitvec::prelude::*;
+//use bitvec::prelude::*;
+    // 
+    // 
+    // println!("{b}");
+    // let mut bits = bitvec![0; 1000000000000];
 fn main(){
-    let mut i:u64=1;
     let two:u128=2;
-    let b=two.pow(67);
-    println!("{b}");
-    let mut bits = bitvec![0; 1000000000000];
-    let goal_num=10_000_000_000;
+    let goal_num=two.pow(30);
+    let mut i:u128=1;
     while i<goal_num{
         let mut n=i;
         while n>=i{
