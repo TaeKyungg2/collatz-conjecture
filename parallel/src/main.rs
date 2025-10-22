@@ -14,21 +14,25 @@
 //         thread::sleep(Duration::from_millis(100));
 //     }
 // }
-
+use bitvec::prelude::*;
 fn main(){
-    let mut i:i32=1;
-    while i<100{
-        let first=i;
+    let mut i:u64=1;
+    let two:u128=2;
+    let b=two.pow(67);
+    println!("{b}");
+    let mut bits = bitvec![0; 1000000000000];
+    let goal_num=10_000_000_000;
+    while i<goal_num{
         let mut n=i;
-        while n>=first{
-        if n%2==0{
-            n=n>>1;
+        while n>=i{
+            if n%2==0{
+                n=n>>1;
+            }
+            else{
+                n=(n<<1)+n+1;
+            }
+            i+=2;
         }
-        else{
-            n=(n<<1)+n+1;
-        }
-        i+=1;
     }
-    }
-    println!("end");
+    println!("end{goal_num}numbers");
 }
