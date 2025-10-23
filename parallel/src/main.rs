@@ -26,7 +26,7 @@
 use std::io::{self, Write};
 fn main(){
     let two:u128=2;
-    let goal_num=two.pow(20);
+    let goal_num=two.pow(10);
     let mut i:u128=3;
     while i<goal_num{
         if !calculation(i){println!("false");break;};
