@@ -26,12 +26,12 @@
 use std::io::{self, Write};
 fn main(){
     let two:u128=2;
-    let goal_num=two.pow(10);
+    let goal_num=two.pow(12);
     let mut i:u128=3;
     while i<goal_num{
         if !calculation(i){println!("false");break;};
         i+=2;
-        if i%(goal_num/10-1)==0{print!("{} ",i/(goal_num/10-1));}
+        if i%(goal_num/16-1)==0{print!("{i} ");}
         io::stdout().flush().unwrap();
 
     }
