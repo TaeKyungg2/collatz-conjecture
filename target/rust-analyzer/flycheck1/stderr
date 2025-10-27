@@ -1,0 +1,56 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on shared package cache
+   0.010082792s  INFO prepare_target{force=false package_id=rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust) target="parallel\u{feff}"}: cargo::core::compiler::fingerprint: fingerprint error for rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust)/Check { test: false }/TargetInner { name: "parallel\u{feff}", doc: true, ..: with_path("/Users/Taery/Collatz_Conjecture/rust/src/bin/parallel\u{feff}.rs", Edition2024) }
+   0.010100125s  INFO prepare_target{force=false package_id=rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust) target="parallel\u{feff}"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/Taery/Collatz_Conjecture/rust/target/debug/.fingerprint/rust-fd0fd268456d6dcb/bin-parallel﻿`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.022688542s  INFO prepare_target{force=false package_id=rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust) target="parallel\u{feff}"}: cargo::core::compiler::fingerprint: fingerprint error for rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust)/Check { test: true }/TargetInner { name: "parallel\u{feff}", doc: true, ..: with_path("/Users/Taery/Collatz_Conjecture/rust/src/bin/parallel\u{feff}.rs", Edition2024) }
+   0.022700959s  INFO prepare_target{force=false package_id=rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust) target="parallel\u{feff}"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/Taery/Collatz_Conjecture/rust/target/debug/.fingerprint/rust-779db3aae84271b5/test-bin-parallel﻿`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+    Checking rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust)
+error: could not compile `rust` (bin "parallel﻿") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `rust` (bin "parallel﻿" test) due to 1 previous error
