@@ -1,4 +1,4 @@
-use std::io::{self, Write};
+// use std::io::{self, Write};
 use std::time::Instant;
 fn main() {
     let goal_num = 1 << 20;
