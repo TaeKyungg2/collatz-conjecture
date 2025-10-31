@@ -1,9 +1,7 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on shared package cache
-   0.010082792s  INFO prepare_target{force=false package_id=rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust) target="parallel\u{feff}"}: cargo::core::compiler::fingerprint: fingerprint error for rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust)/Check { test: false }/TargetInner { name: "parallel\u{feff}", doc: true, ..: with_path("/Users/Taery/Collatz_Conjecture/rust/src/bin/parallel\u{feff}.rs", Edition2024) }
-   0.010100125s  INFO prepare_target{force=false package_id=rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust) target="parallel\u{feff}"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/Taery/Collatz_Conjecture/rust/target/debug/.fingerprint/rust-fd0fd268456d6dcb/bin-parallel﻿`
+   0.005930625s  INFO prepare_target{force=false package_id=rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust) target="parallel\u{feff}"}: cargo::core::compiler::fingerprint: fingerprint error for rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust)/Check { test: false }/TargetInner { name: "parallel\u{feff}", doc: true, ..: with_path("/Users/Taery/Collatz_Conjecture/rust/src/bin/parallel\u{feff}.rs", Edition2024) }
+   0.005944375s  INFO prepare_target{force=false package_id=rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust) target="parallel\u{feff}"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/Taery/Collatz_Conjecture/rust/target/debug/.fingerprint/rust-fd0fd268456d6dcb/bin-parallel﻿`
 
 Caused by:
     No such file or directory (os error 2)
@@ -26,8 +24,8 @@ Stack backtrace:
   14: std::rt::lang_start::<()>::{closure#0}
   15: std::rt::lang_start_internal
   16: _main
-   0.022688542s  INFO prepare_target{force=false package_id=rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust) target="parallel\u{feff}"}: cargo::core::compiler::fingerprint: fingerprint error for rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust)/Check { test: true }/TargetInner { name: "parallel\u{feff}", doc: true, ..: with_path("/Users/Taery/Collatz_Conjecture/rust/src/bin/parallel\u{feff}.rs", Edition2024) }
-   0.022700959s  INFO prepare_target{force=false package_id=rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust) target="parallel\u{feff}"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/Taery/Collatz_Conjecture/rust/target/debug/.fingerprint/rust-779db3aae84271b5/test-bin-parallel﻿`
+   0.008219208s  INFO prepare_target{force=false package_id=rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust) target="parallel\u{feff}"}: cargo::core::compiler::fingerprint: fingerprint error for rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust)/Check { test: true }/TargetInner { name: "parallel\u{feff}", doc: true, ..: with_path("/Users/Taery/Collatz_Conjecture/rust/src/bin/parallel\u{feff}.rs", Edition2024) }
+   0.008224708s  INFO prepare_target{force=false package_id=rust v0.1.0 (/Users/Taery/Collatz_Conjecture/rust) target="parallel\u{feff}"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/Taery/Collatz_Conjecture/rust/target/debug/.fingerprint/rust-779db3aae84271b5/test-bin-parallel﻿`
 
 Caused by:
     No such file or directory (os error 2)
